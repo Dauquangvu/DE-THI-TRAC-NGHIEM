@@ -3,26 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ÔN THI TRẮC NGHIỆM BÁO CÁO VIÊN</title>
+    <title>Trang tổng hợp Trắc nghiệm</title>
 
-    <!-- CSS hiệu ứng lấp lánh đỏ-vàng -->
-    <style>
-    @keyframes redYellowGlow {
-      0% { color: red; text-shadow: 0 0 5px yellow; }
-      25% { color: yellow; text-shadow: 0 0 10px red; }
-      50% { color: red; text-shadow: 0 0 15px yellow; }
-      75% { color: yellow; text-shadow: 0 0 10px red; }
-      100% { color: red; text-shadow: 0 0 5px yellow; }
-    }
-
-    .glow-title {
-      animation: redYellowGlow 2s infinite;
-    }
-    </style>
-</head>
-    <p style="text-align:center; color:#555; font-size:16px; margin-top:-10px;">
-    Tác giả: Đậu Quang Vũ – CTV/c12/d3/e1
-</p>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -31,10 +13,29 @@
             padding: 20px;
         }
 
+        /* Hiệu ứng tiêu đề đỏ vàng */
+        @keyframes redYellowGlow {
+          0% { color: red; text-shadow: 0 0 5px yellow; }
+          25% { color: yellow; text-shadow: 0 0 10px red; }
+          50% { color: red; text-shadow: 0 0 15px yellow; }
+          75% { color: yellow; text-shadow: 0 0 10px red; }
+          100% { color: red; text-shadow: 0 0 5px yellow; }
+        }
+
         h1 {
             text-align: center;
-            color: #333;
-            margin-bottom: 40px;
+            margin-bottom: 10px;
+        }
+
+        .glow-title {
+            animation: redYellowGlow 2s infinite;
+        }
+
+        .author {
+            text-align:center;
+            color:#555;
+            font-size:16px;
+            margin-bottom:30px;
         }
 
         .cards-container {
@@ -88,7 +89,6 @@
             background-color: #007bff;
             color: white;
             border-radius: 8px;
-            transition: background 0.3s;
         }
 
         .card-content a:hover {
@@ -100,60 +100,64 @@
             margin-top: 50px;
             font-size: 14px;
             color: #888;
-            letter-spacing: 0.5px;
-        }
-
-        @media (max-width: 500px) {
-            .card-content h2 {
-                font-size: 18px;
-            }
-            .card-content p {
-                font-size: 14px;
-            }
         }
     </style>
 </head>
+
 <body>
 
-<h1 class="glow-title">ÔN THI TRẮC NGHIỆM BÁO CÁO VIÊN</h1>
+    <h1 class="glow-title">Trang tổng hợp Trắc nghiệm</h1>
+    <div class="author">Tác giả: Đậu Quang Vũ – CTV/c12/d3/e1</div>
 
     <div class="cards-container">
 
-        <!-- Card hiện có -->
+        <!-- Phần 1 -->
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1122&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Phần 1">
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1122&auto=format&fit=crop" alt="">
             <div class="card-content">
                 <h2>Đề Trắc nghiệm Phần 1</h2>
-                <p>Gồm các câu hỏi cơ bản, kiểm tra kiến thức tổng quan.</p>
+                <p>Kiểm tra kiến thức cơ bản.</p>
                 <a href="https://dauquangvu.github.io/trac-nghiem/" target="_blank">Làm bài</a>
             </div>
         </div>
 
+        <!-- Phần 2 -->
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Phần 2">
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1122&auto=format&fit=crop" alt="">
             <div class="card-content">
                 <h2>Đề Trắc nghiệm Phần 2</h2>
-                <p>Gồm các câu hỏi nâng cao, mở rộng kiến thức.</p>
+                <p>Kiến thức nâng cao.</p>
                 <a href="https://dauquangvu.github.io/trac-nghiem-phan-2/" target="_blank">Làm bài</a>
             </div>
         </div>
 
-        <!-- Card trống dự phòng -->
+        <!-- Phần 3 (trống) -->
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1594312915251-48db9280c8f1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Phần 3">
+            <img src="https://via.placeholder.com/400x150.png?text=Phần+3" alt="">
             <div class="card-content">
                 <h2>Đề Trắc nghiệm Phần 3</h2>
-                <p>Chưa có link, bạn điền link ở đây sau.</p>
-                <a href="#" target="_blank">Làm bài</a>
+                <p>Chưa có link, thêm sau.</p>
+                <a href="#">Làm bài</a>
             </div>
         </div>
 
+        <!-- Phần 4 (trống) -->
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1493612276216-ee3925520721?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <img src="https://via.placeholder.com/400x150.png?text=Phần+4" alt="">
             <div class="card-content">
                 <h2>Đề Trắc nghiệm Phần 4</h2>
-                <p>Chưa có link, bạn điền link ở đây sau.</p>
-                <a href="#" target="_blank">Làm bài</a>
+                <p>Chưa có link, thêm sau.</p>
+                <a href="#">Làm bài</a>
+            </div>
+        </div>
+
+        <!-- Thi thật -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1122&auto=format&fit=crop" alt="">
+            <div class="card-content">
+                <h2>🔥 Thi Thật (50 câu)</h2>
+                <p>Random 50 câu từ toàn bộ đề ôn.</p>
+                <a href="thi-that.html" target="_blank">Bắt đầu thi</a>
             </div>
         </div>
 
