@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang tổng hợp Trắc nghiệm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h2 {
+            margin: 0 0 10px;
+            font-size: 20px;
+            color: #007bff;
+        }
+
+        .card-content p {
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .card-content a {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        .card-content a:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 500px) {
+            .card-content h2 {
+                font-size: 18px;
+            }
+            .card-content p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Trang tổng hợp Trắc nghiệm</h1>
+
+    <div class="cards-container">
+
+        <div class="card">
+            <img src="https://dauquangvu.github.io/trac-nghiem/">
+            <div class="card-content">
+                <h2>Đề Trắc nghiệm Phần 1</h2>
+                <p>Gồm 50 câu hỏi trắc nghiệm, kiểm tra kiến thức cơ bản.</p>
+                <a href="https://dauquangvu.github.io/trac-nghiem/" target="_blank">Làm bài</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://dauquangvu.github.io/trac-nghiem-phan-2/">
+            <div class="card-content">
+                <h2>Đề Trắc nghiệm Phần 2</h2>
+                <p>Gồm 50 câu hỏi trắc nghiệm, mở rộng kiến thức nâng cao.</p>
+                <a href="https://dauquangvu.github.io/trac-nghiem-phan-2/" target="_blank">Làm bài</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/400x150.png?text=Phần+3" alt="Phần 3">
+            <div class="card-content">
+                <h2>Đề Trắc nghiệm Phần 3</h2>
+                <p>Gồm 50 câu hỏi chuyên sâu, phù hợp cho luyện thi nâng cao.</p>
+                <a href="https://dauquangvu.github.io/trac-nghiem-phan-3/" target="_blank">Làm bài</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/400x150.png?text=Phần+4" alt="Phần 4">
+            <div class="card-content">
+                <h2>Đề Trắc nghiệm Phần 4</h2>
+                <p>Gồm 50 câu hỏi tổng hợp, kiểm tra toàn diện kiến thức.</p>
+                <a href="https://dauquangvu.github.io/trac-nghiem-phan-4/" target="_blank">Làm bài</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
