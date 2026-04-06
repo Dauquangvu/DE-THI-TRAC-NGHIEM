@@ -152,13 +152,43 @@
         </div>
 
         <!-- Thi thật -->
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1122&auto=format&fit=crop" alt="">
-            <div class="card-content">
-                <h2>🔥 Thi Thật (50 câu)</h2>
-                <p>Random 50 câu từ toàn bộ đề ôn.</p>
-                <a href="https://dauquangvu.github.io/thi-that/" target="_blank">Bắt đầu thi</a>
-            </div>
+/* ===== Thi Thật nổi bật ===== */
+.special {
+    grid-column: 1 / -1; /* chiếm nguyên hàng */
+    max-width: 420px;
+    margin: 30px auto 0;
+    border: 3px solid red;
+    transform: scale(1.08);
+}
+
+/* Tiêu đề nổi bật */
+.special h2 {
+    color: red;
+    font-size: 24px;
+    animation: redYellowGlow 1s infinite;
+}
+
+/* Nội dung */
+.special p {
+    font-size: 17px;
+}
+
+/* Nút thi */
+.special a {
+    background-color: red;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Hover mạnh hơn */
+.special:hover {
+    transform: scale(1.12);
+    box-shadow: 0 12px 30px rgba(255, 0, 0, 0.5);
+}
+
+.special a:hover {
+    background-color: darkred;
+}
         </div>
 
     </div>
