@@ -4,6 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang tổng hợp Trắc nghiệm</title>
+
+    <!-- CSS hiệu ứng lấp lánh đỏ-vàng -->
+    <style>
+    @keyframes redYellowGlow {
+      0% { color: red; text-shadow: 0 0 5px yellow; }
+      25% { color: yellow; text-shadow: 0 0 10px red; }
+      50% { color: red; text-shadow: 0 0 15px yellow; }
+      75% { color: yellow; text-shadow: 0 0 10px red; }
+      100% { color: red; text-shadow: 0 0 5px yellow; }
+    }
+
+    .glow-title {
+      animation: redYellowGlow 2s infinite;
+    }
+    </style>
+</head>
     <p style="text-align:center; color:#555; font-size:16px; margin-top:-10px;">
     Tác giả: Đậu Quang Vũ – CTV/c12/d3/e1
 </p>
@@ -99,7 +115,7 @@
 </head>
 <body>
 
-    <h1>Trang tổng hợp Trắc nghiệm</h1>
+<h1 class="glow-title">Trang tổng hợp Trắc nghiệm</h1>
 
     <div class="cards-container">
 
