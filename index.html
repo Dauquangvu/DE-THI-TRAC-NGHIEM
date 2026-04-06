@@ -1,187 +1,126 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang tổng hợp Trắc nghiệm</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ÔN THI TRẮC NGHIỆM BÁO CÁO VIÊN</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
-            margin: 0;
-            padding: 20px;
-        }
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+}
 
-        /* Hiệu ứng tiêu đề đỏ vàng */
-        @keyframes redYellowGlow {
-          0% { color: red; text-shadow: 0 0 5px yellow; }
-          25% { color: yellow; text-shadow: 0 0 10px red; }
-          50% { color: red; text-shadow: 0 0 15px yellow; }
-          75% { color: yellow; text-shadow: 0 0 10px red; }
-          100% { color: red; text-shadow: 0 0 5px yellow; }
-        }
+/* Hiệu ứng tiêu đề đỏ vàng */
+@keyframes redYellowGlow {
+  0% { color: red; text-shadow: 0 0 5px yellow; }
+  25% { color: yellow; text-shadow: 0 0 10px red; }
+  50% { color: red; text-shadow: 0 0 15px yellow; }
+  75% { color: yellow; text-shadow: 0 0 10px red; }
+  100% { color: red; text-shadow: 0 0 5px yellow; }
+}
 
-        h1 {
-            text-align: center;
-            margin-bottom: 10px;
-        }
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
 
-        .glow-title {
-            animation: redYellowGlow 2s infinite;
-        }
+.glow-title {
+    animation: redYellowGlow 2s infinite;
+}
 
-        .author {
-            text-align:center;
-            color:#555;
-            font-size:16px;
-            margin-bottom:30px;
-        }
+.author {
+    text-align:center;
+    color:#555;
+    font-size:16px;
+    margin-bottom:30px;
+}
 
-        .cards-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-        .card {
-            background-color: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            overflow: hidden;
-            transition: transform 0.3s, box-shadow 0.3s;
-            text-align: center;
-        }
+.card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
 
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-        }
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
 
-        .card img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-        }
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
 
-        .card-content {
-            padding: 20px;
-        }
+.card-content {
+    padding: 20px;
+}
 
-        .card-content h2 {
-            margin: 0 0 10px;
-            font-size: 20px;
-            color: #007bff;
-        }
+.card-content h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: #007bff;
+}
 
-        .card-content p {
-            color: #555;
-            font-size: 16px;
-            margin-bottom: 15px;
-        }
+.card-content p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
 
-        .card-content a {
-            display: inline-block;
-            padding: 10px 20px;
-            text-decoration: none;
-            background-color: #007bff;
-            color: white;
-            border-radius: 8px;
-        }
+.card-content a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+}
 
-        .card-content a:hover {
-            background-color: #0056b3;
-        }
+.card-content a:hover {
+    background-color: #0056b3;
+}
 
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            font-size: 14px;
-            color: #888;
-        }
-    </style>
-</head>
-
-<body>
-
-    <h1 class="glow-title">Trang tổng hợp Trắc nghiệm</h1>
-    <div class="author">Tác giả: Đậu Quang Vũ – CTV/c12/d3/e1</div>
-
-    <div class="cards-container">
-
-        <!-- Phần 1 -->
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1122&auto=format&fit=crop" alt="">
-            <div class="card-content">
-                <h2>Đề Trắc nghiệm Phần 1</h2>
-                <p>Kiểm tra kiến thức cơ bản.</p>
-                <a href="https://dauquangvu.github.io/trac-nghiem/" target="_blank">Làm bài</a>
-            </div>
-        </div>
-
-        <!-- Phần 2 -->
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1122&auto=format&fit=crop" alt="">
-            <div class="card-content">
-                <h2>Đề Trắc nghiệm Phần 2</h2>
-                <p>Kiến thức nâng cao.</p>
-                <a href="https://dauquangvu.github.io/trac-nghiem-phan-2/" target="_blank">Làm bài</a>
-            </div>
-        </div>
-
-        <!-- Phần 3 (trống) -->
-        <div class="card">
-            <img src="https://via.placeholder.com/400x150.png?text=Phần+3" alt="">
-            <div class="card-content">
-                <h2>Đề Trắc nghiệm Phần 3</h2>
-                <p>Chưa có link, thêm sau.</p>
-                <a href="#">Làm bài</a>
-            </div>
-        </div>
-
-        <!-- Phần 4 (trống) -->
-        <div class="card">
-            <img src="https://via.placeholder.com/400x150.png?text=Phần+4" alt="">
-            <div class="card-content">
-                <h2>Đề Trắc nghiệm Phần 4</h2>
-                <p>Chưa có link, thêm sau.</p>
-                <a href="#">Làm bài</a>
-            </div>
-        </div>
-
-        <!-- Thi thật -->
-/* ===== Thi Thật nổi bật ===== */
 /* ===== Thi Thật nổi bật ===== */
 .special {
-    grid-column: 1 / -1; /* chiếm nguyên hàng */
+    grid-column: 1 / -1;
     max-width: 420px;
     margin: 30px auto 0;
     border: 3px solid red;
     transform: scale(1.08);
+    transition: all 0.3s ease;
 }
 
-/* Tiêu đề nổi bật */
 .special h2 {
     color: red;
     font-size: 24px;
     animation: redYellowGlow 1s infinite;
 }
 
-/* Nội dung */
 .special p {
     font-size: 17px;
 }
 
-/* Nút thi */
 .special a {
     background-color: red;
     font-weight: bold;
     font-size: 16px;
 }
 
-/* Hover mạnh hơn */
 .special:hover {
     transform: scale(1.12);
     box-shadow: 0 12px 30px rgba(255, 0, 0, 0.5);
@@ -190,13 +129,78 @@
 .special a:hover {
     background-color: darkred;
 }
-        </div>
 
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+    color: #888;
+}
+</style>
+</head>
+
+<body>
+
+<h1 class="glow-title">ÔN THI TRẮC NGHIỆM BÁO CÁO VIÊN</h1>
+<div class="author">Tác giả: Đậu Quang Vũ – CTV/c12/d3/e1</div>
+
+<div class="cards-container">
+
+    <!-- Phần 1 -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1122&auto=format&fit=crop">
+        <div class="card-content">
+            <h2>Đề Trắc nghiệm Phần 1</h2>
+            <p>Kiểm tra kiến thức cơ bản.</p>
+            <a href="https://dauquangvu.github.io/trac-nghiem/" target="_blank">Làm bài</a>
+        </div>
     </div>
 
-    <footer>
-        Đậu Quang Vũ – CTV/c12/d3/e1
-    </footer>
+    <!-- Phần 2 -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1122&auto=format&fit=crop">
+        <div class="card-content">
+            <h2>Đề Trắc nghiệm Phần 2</h2>
+            <p>Kiến thức nâng cao.</p>
+            <a href="https://dauquangvu.github.io/trac-nghiem-phan-2/" target="_blank">Làm bài</a>
+        </div>
+    </div>
+
+    <!-- Phần 3 -->
+    <div class="card">
+        <img src="https://via.placeholder.com/400x150.png?text=Phần+3">
+        <div class="card-content">
+            <h2>Đề Trắc nghiệm Phần 3</h2>
+            <p>Chưa có link.</p>
+            <a href="#">Làm bài</a>
+        </div>
+    </div>
+
+    <!-- Phần 4 -->
+    <div class="card">
+        <img src="https://via.placeholder.com/400x150.png?text=Phần+4">
+        <div class="card-content">
+            <h2>Đề Trắc nghiệm Phần 4</h2>
+            <p>Chưa có link.</p>
+            <a href="#">Làm bài</a>
+        </div>
+    </div>
+
+    <!-- 🔥 Thi Thật -->
+    <div class="card special">
+        <img src="https://images.unsplash.com/photo-1584697964403-c0f5d9f0f4c4?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-content">
+            <h2>🔥 THI THẬT</h2>
+            <p><b>50 câu hỏi ngẫu nhiên</b><br>Tổng hợp từ toàn bộ đề ôn luyện</p>
+            <a href="https://dauquangvu.github.io/thi-that/" target="_blank">BẮT ĐẦU THI</a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+Đậu Quang Vũ – CTV/c12/d3/e1
+</footer>
 
 </body>
 </html>
